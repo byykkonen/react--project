@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './App.css';
+import FilmsList from './components/filmsList';
 
 class App extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ onSubmit(event) {
             return <li key={item + idx}>{item}</li>;
           })}
         </ul>
+        <FilmsList />
       </div>
     );
   }
